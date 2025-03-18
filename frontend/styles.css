@@ -1,0 +1,180 @@
+/* Ana stil dosyası */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 2rem;
+}
+
+/* Kart stilleri */
+.card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background-color: #f1f8ff;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+/* Form alanları */
+.form-control, .form-select {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Butonlar */
+.btn {
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Transkripsiyon segmentleri */
+.segment {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.segment:hover {
+    background-color: #f1f8ff;
+}
+
+.segment.active {
+    background-color: #e2f0ff;
+    border-left: 3px solid #007bff;
+}
+
+.segment-time {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-right: 0.5rem;
+}
+
+.segment-speaker {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.speaker-1 { color: #007bff; }
+.speaker-2 { color: #dc3545; }
+.speaker-3 { color: #28a745; }
+.speaker-4 { color: #fd7e14; }
+.speaker-5 { color: #6f42c1; }
+
+/* Video konteyner */
+#video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 oran */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#video-container iframe,
+#video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+/* Yükleme animasyonu */
+#loading {
+    padding: 2rem;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Tam transkripsiyon */
+#full-transcript {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Sekmeler */
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #495057;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.nav-link.active {
+    color: #007bff;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Hata mesajı */
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Duyarlı tasarım için medya sorguları */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
